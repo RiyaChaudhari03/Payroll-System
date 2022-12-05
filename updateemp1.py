@@ -85,7 +85,7 @@ def PRODUCT():
 
 master = Tk()
 master.title("Payroll Management System")
-img = Image.open('j1.jpg')
+img = Image.open('a1.jpg')
 bg = ImageTk.PhotoImage(img)
 master.geometry("750x450")
 label3 = Label(master, image=bg)

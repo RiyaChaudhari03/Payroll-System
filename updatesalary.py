@@ -56,7 +56,7 @@ def update_record():
     args11=int(e12.get())
     
     L1.config(text="Salary Updated",fg="#00827f",font=("times",20))
-    sqlupd="UPDATE salary SET name='%s',month='%s',noofdays='%s',noofleaves='%s',overtimeinhours='%s',salary='%s',salaryperday='%s',deduction='%s',extratime='%s',grosspay='%s' WHERE employeeno=%d"%(args1,args2,args3,args4,args5,args6,args7,args8,args9,args10,args11)
+    sqlupd="UPDATE salary SET name='%s',month='%s',noofdays='%s',noofleaves='%s',overtimeinhours='%s',salary='%s',salaryperday='%s',deduction='%s',extratime='%s',Netpay='%s' WHERE employeeno=%d"%(args1,args2,args3,args4,args5,args6,args7,args8,args9,args10,args11)
     a.execute(sqlupd)
     print("Record updated")
     conn.commit()
@@ -66,9 +66,9 @@ def update_record():
     
 master=Tk()
 master.title("payroll")
-img =Image.open('j1.jpg')
+img =Image.open('a1.jpg')
 bg = ImageTk.PhotoImage(img)
-master.geometry("780x520")
+master.geometry("750x450")
 label3 = Label(master, image=bg)
 label3.place(x =0,y =0)
 
@@ -96,7 +96,7 @@ label9.place(x=30,y=320)
 
 label10=Label(master,text="Extra time",fg="#00827f",font=("times",15))
 label10.place(x=30,y=350)
-label11=Label(master,text="Gross Pay",fg="#00827f",font=("times",15))
+label11=Label(master,text="Net Pay",fg="#00827f",font=("times",15))
 label11.place(x=30,y=380)
 label12=Label(master,text="Search Employee No.",fg="#00827f",font=("times",15))
 label12.place(x=30,y=410)

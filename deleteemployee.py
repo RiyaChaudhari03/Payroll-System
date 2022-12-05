@@ -65,9 +65,9 @@ def PRODUCT():
     k1.insert(END, "Web Developer")
 master=Tk()
 master.title("inventary")
-img =Image.open('j1.jpg')
+img =Image.open('a1.jpg')
 bg = ImageTk.PhotoImage(img)
-master.geometry("750x750")
+master.geometry("750x450")
 label3 = Label(master, image=bg)
 label3.place(x =0,y =0)
 

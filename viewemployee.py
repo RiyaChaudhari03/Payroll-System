@@ -3,7 +3,7 @@ from tkinter import ttk
 import pymysql
 import pymysql.cursors
 win = Tk()
-win.geometry("700x350")
+win.geometry("750x450")
 style = ttk.Style()
 style.theme_use('clam')
 tree = ttk.Treeview(win, column=("Employee Number", "Name", "Qualification","Experience","Job","Date Of Join","Contact","Address","Email","Salary"), show='headings', height=15)

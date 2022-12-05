@@ -26,15 +26,19 @@ def search_id():
 
 
 master = Tk()
+
 master.title("Payroll Management System")
 master.configure(bg="#375068")
+master.geometry("350x150")
+
 Label(master, text="Admin Login", fg="white", bg="#375068", font=("times", 20)).grid(column=1)
 Label(master, text=" USER ID", fg="white", bg="#375068", font=("times", 13)).grid(row=1)
-Label(master, text=" PAASWORD", fg="white", bg="#375068", font=("times", 13)).grid(row=2)
+Label(master, text=" PASSWORD", fg="white", bg="#375068", font=("times", 13)).grid(row=2)
+
 e1 = Entry(master, width=30, bd=4, fg="blue", bg="#F7EE89")
 e2 = Entry(master, width=30, show="*", bd=4, fg="blue", bg="#F7EE89")
 e1.grid(row=1, column=1)
 e2.grid(row=2, column=1)
-Button(master, text="Login", fg="blue", command=search_id).grid(row=3, column=1, sticky=W, pady=4)
-Button(master, text="Cancel", fg="blue", command=master.quit).grid(row=3, column=2, sticky=W, pady=4)
+Button(master, text="Login", fg="blue", command=search_id).grid(row=4, sticky=W,column=1, padx=11, pady=10)
+Button(master, text="Cancel", fg="blue", command=master.quit).grid(row=4, column=1, padx=3, pady=10)
 mainloop()

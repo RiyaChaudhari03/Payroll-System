@@ -14,8 +14,6 @@ def onselect(evt):
     e101.delete(0, END)
     e101.insert(END, standard)
     print('you selected item %d:""%s"' % (index, value))
-    ############
-
 
 def add_fields():
     conn = pymysql.connect(host='localhost', user='root', db='payroll')
@@ -46,28 +44,17 @@ def add_fields():
 
 
 def PRODUCT():
-    # global category
-    # conn=pymysql.connect(host='localhost',user='root',db='payroll')
-    # a=conn.cursor()
-    # sql="SELECT * FROM employee"
-    # try:
-    #    a.execute(sql)
-    #    results=a.fetchall()
-    #    for row in results:
-    #        job=row[4]
+
     k1.insert(END, "Programmer")
     k1.insert(END, "Tester")
     k1.insert(END, "Database administrator")
     k1.insert(END, "Web Developer")
 
 
-# except:
-#    print("Error:unable to fetch data")
-# a.close()
-# conn.close()
+
 master = Tk()
 master.title("inventary")
-img = Image.open('j1.jpg')
+img = Image.open('a1.jpg')
 bg = ImageTk.PhotoImage(img)
 master.geometry("750x450")
 label3 = Label(master, image=bg)
